@@ -1,0 +1,153 @@
+:root{
+    --primary: #fff;
+    --bg-color: #0b4008;
+    --bg-envelope-color: #f5edd1;
+    --envelope-tab: #ecdeb8;
+    --envelope-cover: #e6cfa7;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --txt-color: #444;
+    --heart-color: rgb(252, 8, 231);
+    --main-text-color: #EBA832;
+  }
+  @font-face {
+    font-family: 'Hobbiton Brushhand';
+    src: url('/assets/fonts/HobbitonBrushhandhobbitonBrush-WygA.ttf');
+  }
+  body{
+    height:100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .container > .envelope-wrapper {
+    background: var(--bg-envelope-color);
+    box-shadow: 0 0 40px var(--shadow-color);
+  }
+  .envelope-wrapper > .envelope {
+    position: relative;
+    width: 300px;
+    height: 230px;
+  }
+  .envelope-wrapper > .envelope::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    border-top: 130px solid var(--envelope-tab);
+    border-right: 150px solid transparent;
+    border-left: 150px solid transparent;
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 0.7s;
+  }
+  .envelope-wrapper > .envelope::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 0px;
+    height: 0px;
+    border-top: 130px solid transparent;
+    border-right: 150px solid var(--envelope-cover);
+    border-bottom: 100px solid var(--envelope-cover);
+    border-left: 150px solid var(--envelope-cover);
+  }
+  .envelope > .letter {
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    width: 54%;
+    height: 80%;
+    background-image: url('/assets/img/AdobeStock_46314336.jpeg');
+    background-size: cover;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 5px var(--shadow-color);
+    padding: 20px 10px;
+  }
+  
+  .envelope > .letter > .text {
+    font-family: 'Hobbiton Brushhand';
+    color: var(--txt-color);
+    text-align: left;
+    font-size: 10px;
+  }
+  .text * {
+    margin:0;
+  }
+  .text a {
+    color:black;
+  }
+  .seal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:50px;
+    height:50px;
+  background-image: url('/assets/img/seal.png');
+  background-size: cover;
+    z-index: 4;
+    transform: translate(-50%, -20%);
+    transition: transform 0.5s ease-in-out 1s;
+    cursor: pointer;
+  }
+
+  .seal:before {
+    top: -7.5px;
+  }
+  .seal:after {
+    right: 7.5px;
+  }
+  .flap > .envelope:before {
+    transform: rotateX(180deg);
+    z-index: 0;
+  }
+  .flap > .envelope > .letter {
+    bottom: 150px;
+    transform: scale(1.5);
+    transition-delay: 1s;
+  }
+  .flap > .seal {
+    transform: rotate(90deg);
+    transition-delay: 0.4s;
+  }
+
+  .invite {
+    margin-top:30px;
+    height:100%;
+    text-align: center;
+    color:var(--main-text-color);
+    font-family: 'Hobbiton Brushhand';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .invite * {
+    margin: 0;
+    padding: 0;
+  }
+  .invite h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  .invite h2  {
+    font-size:70px;
+    letter-spacing: 5px;
+  }
+  .invite p {
+    font-size: 20px;
+  }
+  .invite h3 {
+    font-size: 50px;
+  }
+  .and {
+    font-size: 30px !important;
+  }
