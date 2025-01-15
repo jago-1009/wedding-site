@@ -5,13 +5,18 @@
     --envelope-tab: #ecdeb8;
     --envelope-cover: #e6cfa7;
     --shadow-color: rgba(0, 0, 0, 0.2);
-    --txt-color: #444;
+    --txt-color: #06080F;
     --heart-color: rgb(252, 8, 231);
     --main-text-color: #EBA832;
+    --font-size: 
   }
   @font-face {
     font-family: 'Hobbiton Brushhand';
     src: url('/assets/fonts/HobbitonBrushhandhobbitonBrush-WygA.ttf');
+  }
+  @font-face {
+    font-family: 'Charm';
+    src: url('/assets/fonts/Charm-Regular.ttf');
   }
   body{
     height:100%;
@@ -22,6 +27,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .invite-container {
+    background-image: url('/assets/img/AdobeStock_46314336.jpeg');
   }
   .container {
     height: 100vh;
@@ -82,8 +90,9 @@
   .text * {
     margin:0;
   }
-  .text a {
-    color:black;
+  .text a, .text p {
+    color:var(--txt-color);
+    font-family: 'Charm';
   }
   .seal {
     position: absolute;
@@ -120,34 +129,92 @@
   }
 
   .invite {
+    width: 80%;
     margin-top:30px;
-    height:100%;
+    height:100vh;
     text-align: center;
-    color:var(--main-text-color);
+    color:var(--txt-color);
     font-family: 'Hobbiton Brushhand';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
+   
+  
   }
   .invite * {
     margin: 0;
     padding: 0;
+    text-align: left;
   }
   .invite h1 {
-    font-size: 40px;
+    font-size: 5vmax;
     letter-spacing: 2px;
   }
-  .invite h2  {
-    font-size:70px;
-    letter-spacing: 5px;
+ .invite p {
+  font-size:2rem;
+ }
+ .invite h2 {
+  margin: 20px 0px 20px 0px;
+  font-size: 3rem;
+ }
+ .invite h3 {
+  font-size: 3rem;
+ }
+ .message * {
+  width: 100%;
+  text-align: center;
+  font-family: 'Charm';
+
+ }
+ .message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 10%;
+ }
+.details {
+
+}
+.details-title h2 {
+  text-align: center;
+  margin:0px;
+}
+.details-title p {
+  text-align: center;
+  font-family: 'Charm';
+  margin-top: 0px;
+  font-size: 1.5rem;
+}
+.sub-menu {
+  width: 100%;
+  display:flex;
+  margin-top:50px;
+}
+.menu-left {
+  width: 50%;
+
+}
+.sub-menu-body p {
+  font-family: 'Charm';
+  font-size: 1.5rem;
+}
+.menu-right {
+  width: 50%;
+}
+.menu-right iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+ 
+  .sub-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-  .invite p {
-    font-size: 20px;
+  .menu-left, .menu-right {
+    margin-top:20px;
+    width: 100%;
   }
-  .invite h3 {
-    font-size: 50px;
-  }
-  .and {
-    font-size: 30px !important;
-  }
+}
