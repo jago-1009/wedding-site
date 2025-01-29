@@ -172,7 +172,7 @@
 
  }
  .hero-body {
-  transform: translateY(-100px);
+  transform: translateY(-5%);
  }
  .message * {
   width: 100%;
@@ -189,8 +189,8 @@
   flex-direction: column;
   justify-content: space-evenly;
  }
-.details {
-
+.filigree img {
+  width: 100%;
 }
 .details-title h2 {
   text-align: center;
