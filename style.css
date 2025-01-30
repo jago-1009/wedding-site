@@ -45,6 +45,7 @@
     overflow-y: hidden;
   }
   .container > .envelope-wrapper {
+    position: fixed;
     background: var(--bg-envelope-color);
     box-shadow: 0 0 40px var(--shadow-color);
   }
