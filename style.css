@@ -1,9 +1,9 @@
 :root{
     --primary: #fff;
     --bg-color: #0b4008;
-    --bg-envelope-color: #f5edd1;
-    --envelope-tab: #ecdeb8;
-    --envelope-cover: #e6cfa7;
+    --bg-envelope-color: #3E5504;
+    --envelope-tab: #668C07;
+    --envelope-cover: #5D7F06;
     --shadow-color: rgba(0, 0, 0, 0.2);
     --txt-color: #06080F;
     --heart-color: rgb(252, 8, 231);
@@ -28,7 +28,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: var(--bg-color);
+    background-image: url('/assets/img/table.png');
     display: flex;
     align-items: center;
     justify-content: center;
