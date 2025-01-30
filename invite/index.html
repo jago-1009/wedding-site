@@ -9,21 +9,35 @@
 </head>
 
 <body class="invite-container">
+   
     <div class="invite">
+        
+        <nav><ul>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#map">Location</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul></nav>
         <div class="hero">
-            <h1 class="title">Dear Esteemed Guest,</h1>
+            <!-- <h1 class="title">Dear Esteemed Guest,</h1> -->
             <div class="hero-body">
-            <div class="filigree"><img src="../assets/img/filigree-top.png" alt=""></div>
+            <div class="filigree"><img src="../assets/img/SVG/filigree.svg" alt=""></div>
             <div class="message">
                 <p>We cordially invite you to celebrate the union of</p>
-                <h2>Jena Szalai and Jacob Garwood</h2>
+                <h2 class="names">Jena Szalai and Jacob Garwood</h2>
                 <p>at their wedding on</p>
                 <h3>September 27th, 2025!</h3>
                 <p>We invite you to join us as we set forth on the grandest adventure of all!</p>
                 
             </div>
-            <div class="filigree"><img src="../assets/img/filigree-top.png" alt="" class="inverse"></div>
+            <div class="filigree"><img src="../assets/img/SVG/filigree.svg" alt="" class="inverse"></div>
         </div>
+    
+    </div
+    <div class="story" id="story">
+        <div class="story-title">
+            <h2>Our Story</h2>
+            <div class="story-bio"><p><strong>Once upon a time,</strong><br>There existed two young souls by the name of Jena and Jacob. They had first met each other at the party of a mutual friend. At the time, they did not know it yet, but fate had plans for these two.</p></div>
     </div>
         <div class="details">
             <div class="details-title">
@@ -32,7 +46,7 @@
             </div>
             <div class="sub-menu">
                 <div class="menu-left">
-                    <div class="sub-menu-title">
+                    <div id="map" class="sub-menu-title">
                         <h2>Location</h2>
                     </div>
 
@@ -42,10 +56,14 @@
                         <p>Our wedding will be held at the Speedway Legacy Inn located at 1829 Cunningham Road,
                             Indianapolis, IN, 46224.</p>
                     </div>
+                    <div class="map">
+                        <img src="../assets/img/inn.jpg" alt="">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6131.363492958301!2d-86.26271052369444!3d39.79169699344344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca8295d575bd9%3A0x4ca2ee44729ba94c!2sSpeedway%20Legacy%20Inn%20Events%20%26%20Suites!5e0!3m2!1sen!2sus!4v1736967112308!5m2!1sen!2sus"
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                    </div>
                     <div class="sub-menu-body">
                         <p>Have questions about the location/where to stay? <a href="#faq">Check the FAQ Below!</a></p>
                     </div>
@@ -54,7 +72,7 @@
             </div>
             <div class="sub-menu">
                 <div class="menu-left">
-                    <div class="sub-menu-title">
+                    <div id="schedule" class="sub-menu-title">
                         <h2>Schedule</h2>
                     </div>
                 </div>
@@ -137,8 +155,8 @@
                 <li>
                     <p>Where can I stay?</p>
                 </li>
-                <p class="faq-body">We've made a list of hotels and other lodging in the area that range budgets!</p>
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iT1XITCb3P88CbITLkIC0zfZiaN7HgU&ehbc=2E312F&noprof=1" height="480"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="faq-body">We've made a list of hotels and other lodging in the area that range budgets! <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iT1XITCb3P88CbITLkIC0zfZiaN7HgU&ehbc=2E312F&noprof=1" height="480"  referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+               
                 <li><p>Do you have a dress code?</p></li>
                 <p class="faq-body">We do not have a strict dress code, but if you would like to match your outfit with our theme, you are more than welcome to! Here's a site with all of our theme details: {{URL}}</p>
                 <li><p>Do you have a Registry?</p></li>
@@ -165,5 +183,4 @@
     </div>
 
 </body>
-<script type="module" src="../app.js"></script>
 </html>
