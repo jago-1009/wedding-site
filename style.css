@@ -32,6 +32,9 @@
     align-items: center;
     justify-content: center;
   }
+  .home {
+    overflow-y: hidden;
+  }
   .invite-container {
     height: 100%;
 
