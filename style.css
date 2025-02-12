@@ -508,6 +508,11 @@ max-height: 230px;}
   .marker {
     flex-direction: column;
     padding: 50px 0px;
+    justify-content: center;
+    
+  }
+  .marker h1 {
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -538,6 +543,7 @@ max-height: 230px;}
 
  .map {
   flex-direction: column;
+
  }
  
  .map iframe {
