@@ -145,7 +145,7 @@ background-size: contain;
     transition-delay: 0.4s;
   }
 
-  .invite {
+  .invite, .story, .location, .schedule, .faq, .rsvp {
     width: 80%;
     /* margin-top:30px; */
     text-align: center;
@@ -159,7 +159,7 @@ background-size: contain;
     font-size: 1.5rem;
     text-align: center;
   }
-  .invite * {
+  .invite *, .story *, .location *, .schedule *, .faq *, .rsvp * {
     margin: 0;
     padding: 0;
     text-align: left;
@@ -224,18 +224,18 @@ background-size: contain;
   nav ul li a {
     color: var(--txt-color);
   }
-  .invite h1 {
+  .invite h1, .story h1, .location h1, .schedule h1, .faq h1, .rsvp h1 {
     font-size: 5vmax;
     letter-spacing: 2px;
   }
- .invite p {
+ .invite p, .story p, .location p, .schedule p, .faq p, .rsvp p {
   font-size:2rem;
  }
- .invite h2 {
+ .invite h2, .story h2, .location h2, .schedule h2, .faq h2, .rsvp h2 {
   margin: 20px 0px 20px 0px;
   font-size: 3rem;
  }
- .invite h3 {
+ .invite h3, .story h3, .location h3, .schedule h3, .faq h3, .rsvp h3 {
   font-size: 3rem;
  }
 
@@ -421,6 +421,61 @@ padding-bottom: 50px;
   font-family: 'Signature';
   text-align: right;
 }
+.image-askew {
+  aspect-ratio: 1/1;
+  width: 100%;
+  margin-top:20px;
+  min-width: 200px;
+  max-width: 230px;
+  max-height: 230px;
+}
+.story-body {
+  display: flex;
+}
+.story-body > * {
+  display: flex;
+  flex-wrap: wrap;
+}
+.story-aside {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.story-aside img {
+  width: 25%;
+max-height: 230px;}
+.story-aside p {
+  font-size: 1em;
+  width: 75%;
+}
+
+.story-content {
+  font-family: 'Ringbearer';
+  text-align: left;
+  font-size: 1.25em;
+}
+.intro {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.intro > * {
+  font-size: 4rem;
+  font-family: 'Hobbiton Brushhand' !important;
+}
+@media screen and (max-width: 1300px) {
+  .story-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .story-aside img {
+    margin-bottom:24px;
+  }
+  .story-aside p {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
  .logo-top {
   letter-spacing: 0px !important;
@@ -458,5 +513,9 @@ padding-bottom: 50px;
  }
  .map img {
   width: 100%;
+ }
+ .story-content, .intro {
+  font-size: 100%;
+  text-align: center;
  }
 }
