@@ -250,7 +250,7 @@ background-size: contain;
 padding-bottom: 200px;
  }
  .names, .date {
-  font-size: 3.5rem !important;
+  font-size: 6rem !important;
   font-family: 'Hobbiton Brushhand' !important;
   font-weight: 100;
   color:var(--main-text-color)
@@ -463,6 +463,36 @@ max-height: 230px;}
   font-size: 4rem;
   font-family: 'Hobbiton Brushhand' !important;
 }
+.marker {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+  height:100px;
+  align-items: center;
+  justify-content: center;
+}
+.marker h1 {
+  word-spacing: 20px;
+}
+.floral {
+  width: 33%;
+
+  height:100%;
+  display: flex;
+  justify-content: center;
+}
+.marker h1 {
+
+  font-family: 'Ringbearer';
+  font-size: 3rem;
+  background: linear-gradient(90deg, rgba(200,151,10,1) 0%, rgba(255,215,93,1) 50%, rgba(200,151,10,1) 100%);
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; 
+}
+.flipped {
+  transform: scaleX(-1);
+}
 @media screen and (max-width: 1300px) {
   .story-aside {
     display: flex;
@@ -474,6 +504,10 @@ max-height: 230px;}
   }
   .story-aside p {
     width: 100%;
+  }
+  .marker {
+    flex-direction: column;
+    padding: 50px 0px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -517,5 +551,8 @@ max-height: 230px;}
  .story-content, .intro {
   font-size: 100%;
   text-align: center;
+ }
+ .names, .date {
+  font-size: 4rem !important;
  }
 }
