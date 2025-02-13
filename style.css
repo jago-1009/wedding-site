@@ -107,9 +107,12 @@ background-size: contain;
   .text * {
     margin:0;
   }
+  .text h1 {
+    font-size: 1rem;
+  }
   .text a, .text p {
     color:var(--txt-color);
-    font-family: 'Charm';
+    font-family: 'Ringbearer';
   }
   .seal {
     position: absolute;
