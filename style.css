@@ -621,7 +621,18 @@ margin: 20px 0px;
   justify-content: center;
   align-items: center;
  }
+ @media screen and (max-width: 640px) {
+  .body {
+    background-size:100% 100%;
+  }
+ }
  @media screen and (max-width: 480px) {
+  .message a {
+  word-wrap: break-word;
+  }
+  .names, .date {
+  font-size: 3rem !important;
+  }
 #time {
   border-right:0px;
 } 
