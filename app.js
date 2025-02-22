@@ -8,7 +8,7 @@ let currentDay = currentDate.getDate();
 let formattedDate = `${currentYear}-${currentMonth.toString().padStart(2, '0')}-${currentDay.toString().padStart(2, '0')}`;
 console.log(formattedDate); // Output the formatted date
 
-if (currentMonth >= 22 && currentDay >= 13 && currentYear >= 2025) { // Check if the current date is after February 12, 2025 (TODO: Change this to the actual RSVP date)
+if (currentMonth >= 7 && currentDay >= 27 && currentYear >= 2025) { // Check if the current date is after July 27, 2025
     if (document.getElementById("rsvp")) {
         document.getElementById("rsvp").style.display = "flex";
     }

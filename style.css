@@ -12,6 +12,10 @@
     --bottom-paper: 100%;
   }
   @font-face {
+    font-family: 'Kavivanar';
+    src: url('/assets/fonts/Kavivanar-Regular.ttf');
+  }
+  @font-face {
     font-family: 'Hobbiton Brushhand';
     src: url('/assets/fonts/hobbitonbrushhand.ttf');
   }
@@ -231,10 +235,10 @@ background-size: contain;
     font-size: 5vmax;
     letter-spacing: 2px;
   }
- .invite p, .story p, .location p, .schedule p, .faq p, .rsvp p {
+ .invite p, .location p, .schedule p, .faq p, .rsvp p {
   font-size:2rem;
  }
- .invite h2, .story h2, .location h2, .schedule h2, .faq h2, .rsvp h2 {
+ .invite h2, .location h2, .schedule h2, .faq h2, .rsvp h2 {
   margin: 20px 0px 20px 0px;
   font-size: 3rem;
  }
@@ -442,30 +446,30 @@ padding-bottom: 50px;
   max-width: 230px;
   max-height: 230px;
 }
-.story-body {
-  display: flex;
+.story-body p {
+  font-family: 'Kavivanar';
 }
 .story-body > * {
   display: flex;
   flex-wrap: wrap;
 }
 .story-aside {
-  display: flex;
-  flex-wrap: wrap;
   
 }
 .story-aside img {
-  width: 25%;
-max-height: 230px;}
+  float: left;
+max-height: 230px;
+margin:15px 15px 15px 0px;}
+
 .story-aside p {
   font-size: 1em;
-  width: 75%;
+  width: 100%;
+  word-wrap: break-word;
 }
 
-.story-content {
-  font-family: 'Ringbearer';
+.story-content, .story-content * {
   text-align: left;
-  font-size: 1.25em;
+  font-size: 32px !important;
 }
 .intro {
   display: block;
@@ -473,7 +477,9 @@ max-height: 230px;}
   text-align: left;
 }
 .intro > * {
-  font-size: 4rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 5rem;
   font-family: 'Hobbiton Brushhand' !important;
 }
 .marker {
