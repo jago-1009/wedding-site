@@ -668,6 +668,9 @@ margin: 20px 0px;
   }
  }
  @media screen and (max-width: 480px) {
+  .name, .date {
+    line-height: 120%;
+  }
   .intro h2 {
     margin-top: 40px;
     font-size: 55px;
