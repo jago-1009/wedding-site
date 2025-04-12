@@ -562,6 +562,12 @@ margin-top: 48px;
   font-family: 'Ringbearer';
   
 }
+.logo-link {
+  text-decoration: none;
+}
+.logo-link .logo-top {
+  color:black;
+}
 .rsvp * {
   color:var(--txt-color);
 }
@@ -588,6 +594,17 @@ margin-top: 48px;
   }
 }
 @media screen and (max-width: 768px) {
+  nav {
+    height:fit-content; 
+  }
+  nav ul {
+    margin-top:24px !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
  .vert {
   padding-top:20px;
  }
@@ -641,9 +658,13 @@ margin: 20px 0px;
   justify-content: center;
   align-items: center;
  }
+}
  @media screen and (max-width: 640px) {
   .body {
     background-size:100% 100%;
+  }
+  .story-content * {
+    font-size: 24px !important;
   }
  }
  @media screen and (max-width: 480px) {
@@ -655,6 +676,10 @@ margin: 20px 0px;
   }
 #time {
   border-right:0px;
-} 
+}   .story-content * {
+  font-size: 16px !important;
 }
+
 }
+
+
