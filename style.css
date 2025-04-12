@@ -671,6 +671,9 @@ margin: 20px 0px;
   .names, .date {
     line-height: 120%;
   }
+  .date {
+    margin-top:24px;
+  }
   .intro h2 {
     margin-top: 40px;
     font-size: 55px;
