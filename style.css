@@ -668,6 +668,9 @@ margin: 20px 0px;
   }
  }
  @media screen and (max-width: 480px) {
+  .theme-image img {
+    width: 100%;
+  }
   .names, .date {
     line-height: 120%;
   }
